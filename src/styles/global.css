@@ -105,7 +105,7 @@ body {
   /* Smaller devices (mobile) */
   @media (max-width: 400px) {
     font-size: 2rem;
-    bottom: 3.5rem;
+    bottom: 2.5rem;
   }
 
   /* Medium devices (large mobile) */
