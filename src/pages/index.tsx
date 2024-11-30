@@ -1,8 +1,5 @@
 import { FC } from "react";
-import { GeistSans } from "geist/font/sans";
 import mineBackground from "../assets/mine_background.svg"
-import MiningUnit from "@/components/MiningUnit";
-import Loader from "@/components/Loader";
 
 const Home: FC = () => {
   const styles = {
