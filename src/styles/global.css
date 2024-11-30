@@ -1,0 +1,254 @@
+
+/* Resetting some default browser styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Geist Sans';
+  src: url('../assets/fonts/Geist-Regular.ttf');
+}
+
+body {
+  font-family: 'Geist Sans', sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+
+/* Container for the page elements */
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: top;
+  text-align: center;
+  background-image: url('../assets/mine_background.svg');
+  background-size: cover;
+  background-position: center;
+  max-width: 2000px;
+  height: 100vh;
+  width: 100vw;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Creates a soft shadow */
+}
+/* Titles and text */
+.title {
+  font-weight: bold;
+  color: #f7f7f7;
+
+  /* Smaller devices (small mobile) */
+  @media (max-width: 400px) {
+    font-size: 2.3rem;
+    margin-top: 5rem;
+  }
+
+  /* Medium devices (large mobile) */
+  @media (min-width: 401px) and (max-width: 500px) {
+    font-size: 2.5rem;
+    margin-top: 5.5rem;
+  }
+
+  /* Tablet */
+  @media (min-width: 401px) and (max-width: 1050px) {
+    font-size: 3rem;
+    margin-top: 5.8rem;
+  }
+
+  /* Larger devices (desktop) */
+  @media (min-width: 1051px) {
+    font-size: 4.5rem;
+    margin-top: 6rem;
+  }
+}
+
+.subtitle {
+  font-weight: 500;
+  color: #f7f7f7;
+
+  /* Smaller devices (mobile) */
+  @media (max-width: 400px) {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  /* Medium devices (large mobile) */
+  @media (min-width: 401px) and (max-width: 1050px) {
+    font-size: 1rem;
+    margin-top: 0.8rem;
+  }
+  /* Larger devices (desktop) */
+  @media (min-width: 1051px) {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+}
+
+.banner {
+  font-weight: 600;
+  color: #3867f2ff;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* Smaller devices (mobile) */
+  @media (max-width: 400px) {
+    font-size: 2rem;
+    bottom: 3.5rem;
+  }
+
+  /* Medium devices (large mobile) */
+  @media (min-width: 401px) and (max-width: 1050px) {
+    font-size: 2.5rem;
+    bottom: 3rem;
+  }
+  /* Larger devices (desktop) */
+  @media (min-width: 1051px) {
+    font-size: 4rem;
+    bottom: 2.2rem;
+  }
+}
+
+/* Background Hills (animation for the background) */
+/* .background-hills {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 50%;
+  background: repeating-linear-gradient(
+    -45deg,
+    #8a8a8a,
+    #8a8a8a 50px,
+    #d3d3d3 50px,
+    #d3d3d3 100px
+  );
+  animation: scroll-hills 15s linear infinite;
+} */
+
+/* @keyframes scroll-hills {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+} */
+
+/* Moving Excavator Digging Unit */
+/* .dig-unit {
+  position: absolute;
+  bottom: 10%;
+  animation: move-across 10s linear infinite;
+}
+
+@keyframes move-across {
+  0% {
+    transform: translateX(-200px);
+  }
+  50% {
+    transform: translateX(50vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+} */
+
+/* Digging arm animation */
+/* .digging-arm {
+  animation: digging 1.5s infinite ease-in-out;
+} */
+
+/* .arm {
+  transform-origin: 65px 50px;  */
+  /* Pivot point for rotation */
+/* } */
+
+/* .shovel {
+  transform-origin: 70px 65px;  */
+  /* Pivot point for rotation */
+/* } */
+
+/* @keyframes digging {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+} */
+
+/* Dust clouds */
+/* .dust {
+  position: absolute;
+  bottom: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.dust-cloud {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 50%;
+  animation: float 2s infinite ease-in-out;
+}
+
+.dust-cloud:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dust-cloud:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dust-cloud:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+} */
+
+/* Loader animation */
+/* .loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #0070f3;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
