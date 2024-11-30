@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Analytics } from "@vercel/analytics/react"
 import mineBackground from "../assets/mine_background.svg"
 
 const Home: FC = () => {
@@ -27,6 +28,7 @@ const Home: FC = () => {
       {/* Coming Soon Content */}
       <h1 className="title">
         Coming Soon
+        <Analytics/>
       </h1>
       <br></br>
       <p className="subtitle">
