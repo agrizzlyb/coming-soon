@@ -32,7 +32,7 @@ export default function Home() {
 
         <div className="inline-block border-2 border-[#5371FF] bg-[#5371FF]/10 text-[#5371FF] px-6 py-3 rounded-lg font-medium text-sm transition-all hover:bg-[#5371FF]/20">
           <div className="text-xs uppercase tracking-wider mb-1">Testing Starts</div>
-          <div className="text-lg font-semibold text-[#1a1a2e]">29th January 2026</div>
+          <div className="text-lg font-semibold text-[#1a1a2e]">2nd Febuary 2026</div>
         </div>
       </div>
     </>
